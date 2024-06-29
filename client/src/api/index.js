@@ -19,13 +19,13 @@ export const deletePost = (id) => API.delete(`posts/${id}`);
 export const likePost = (id) => API.patch(`posts/${id}/likePost`);
 
 export const signin = (data) =>
-    API.post('/users/signin', {
+    API.post('https://nostalgia-net-backend.vercel.app/users/signin', {
         email: data.email,
         password: data.password,
     });
 
 export const signup = (data) =>
-    API.post('/users/signup', {
+    API.post('https://nostalgia-net-backend.vercel.app/users/signup', {
         firstName: data.firstName,
         lastName: data.lastName,
         email: data.email,
