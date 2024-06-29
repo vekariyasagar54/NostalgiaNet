@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+axios.defaults.withCredentials = true;
 const API = axios.create({ baseURL: 'https://nostalgia-net-backend.vercel.app' });
 
 API.interceptors.request.use((req) => {
@@ -10,6 +11,7 @@ API.interceptors.request.use((req) => {
     }
     return req;
 });
+
 
 export const fetchPosts = () => API.get('/posts');
 export const createPost = (newPost) => API.post('/posts', newPost);
