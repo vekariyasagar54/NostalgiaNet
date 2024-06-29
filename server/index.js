@@ -13,7 +13,13 @@ dotenv.config();
 // Middlewares
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
-app.use(cors());
+app.use(cors(
+    {
+        origin : [""],
+        method : ["POST" , "GET"],
+        credentials : true
+    }
+));
 
 app.get('/', (req, res) => {
     res.send(`<center><h1>Hello from server. </h1><h2> Use /posts and /users endpoint</h2></center>`);
