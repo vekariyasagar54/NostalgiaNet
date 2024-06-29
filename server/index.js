@@ -27,12 +27,11 @@ app.get('/', (req, res) => {
 app.use('/posts', postRoutes);
 app.use('/users', userRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://sagar_vekariya:Sagar542005@cluster0.vscwca6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' ;
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ;
 
 mongoose
-    .connect(CONNECTION_URL, {
+    .connect(process.env.CONNECTION_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
