@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-const API = axios.create({ baseURL: 'https://nostalgia-net-backend.vercel.app' });
+const API = axios.create({ baseURL: 'http://localhost:3000' });
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('userToken')) {
@@ -21,13 +21,13 @@ export const deletePost = (id) => API.delete(`posts/${id}`);
 export const likePost = (id) => API.patch(`posts/${id}/likePost`);
 
 export const signin = (data) =>
-    API.post('https://nostalgia-net-backend.vercel.app/users/signin', {
+    API.post('/users/signin', {
         email: data.email,
         password: data.password,
     });
 
 export const signup = (data) =>
-    API.post('https://nostalgia-net-backend.vercel.app/users/signup', {
+    API.post('/users/signup', {
         firstName: data.firstName,
         lastName: data.lastName,
         email: data.email,
