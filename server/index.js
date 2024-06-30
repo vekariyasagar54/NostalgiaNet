@@ -15,7 +15,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors(
     {
-        origin : ["https://nostalgia-net-frontend.vercel.app"],
+        origin : "https://nostalgia-net-frontend.vercel.app",
         method : ["GET", "POST", "PATCH", "DELETE"],
         credentials : true
     }
