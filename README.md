@@ -41,9 +41,9 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/vekariyasagar54/NostalgiaNet.git
-   ```
+```bash
+git clone https://github.com/vekariyasagar54/NostalgiaNet.git
+```
 2. Install npm dependencies in the client directory:
 
 ```bash
@@ -54,7 +54,7 @@ npm install
 3. Install npm dependencies in the server directory:
 
 ```bash
-cd ../server
+cd server
 npm install
 ```
 
