@@ -1,6 +1,6 @@
 # NostalgiaNet
 
-NostalgiaNet is a full-stack web application that aims to preserve and share nostalgic moments through a user-friendly and scalable platform. The project utilizes the MERN stack—MongoDB, Express, React, and Node.js—to provide a robust backend and a dynamic frontend.
+NostalgiaNet is a full-stack web application that aims to preserve and share nostalgic moments through a user-friendly and scalable platform.
 
 - **Frontend**: Built with React and styled using Material UI for a responsive and intuitive user interface.
 - **Backend**: Implemented with Node.js and Express, providing a secure and efficient server-side architecture.
