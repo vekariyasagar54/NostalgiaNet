@@ -10,21 +10,11 @@ import userRoutes from './routes/users.js';
 const app = express();
 dotenv.config();
 
+
 // Middlewares
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
-
-const corsOptions = {
-    origin: "https://nostalgia-net-frontend.vercel.app",
-    methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-    optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
-
-app.options('*', cors(corsOptions)); // Preflight requests
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send(`<center><h1>Hello from server. </h1><h2> Use /posts and /users endpoint</h2></center>`);
