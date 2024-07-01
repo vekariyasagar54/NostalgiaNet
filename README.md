@@ -17,7 +17,7 @@ NostalgiaNet is a full-stack web application that aims to preserve and share nos
 
 ## Screenshots
 
-![Homepage](client/public/home.png)
+![Homepage](client/public/create.png)
 *Displaying all posts; logged-in users can edit or delete their posts.*
 
 ![Sign in page](client/public/signin.png)
@@ -26,7 +26,7 @@ NostalgiaNet is a full-stack web application that aims to preserve and share nos
 ![Sign up page](client/public/signup.png)
 *New user registration options: email or Google Sign-Up.*
 
-![Update post](client/public/update.png)
+![Update post](client/public/edit.png)
 *Authorized users can edit their posts using the options menu.*
 
 ## Getting Started
